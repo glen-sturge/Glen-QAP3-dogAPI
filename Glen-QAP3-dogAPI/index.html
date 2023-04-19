@@ -1,0 +1,82 @@
+<!-- 
+  Dog Search Website: index.html
+
+  Author: Glen Sturge
+  Date: 3/25/2023
+  Validated html on 3/25/2023 @ https://validator.w3.org/
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DogSearch: Home</title>
+    <link rel="stylesheet" type="text/css" href="./style/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-wrapper">
+        <div class="inner-header-wrapper">
+          <div id="logo-wrapper">
+            <h1>
+              <span class="logo">Dog<span>Search</span></span>
+            </h1>
+          </div>
+          <div id="nav-wrapper">
+            <nav>
+              <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./pages/about.html">About</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div id="ui">
+          <label for="breed-select"
+            >Breed select:
+            <select id="breed-select">
+              <option value="">--Select a breed--</option>
+            </select></label
+          >
+
+          <br />
+          <label for="image-count">
+            Number of images:
+            <input
+              type="number"
+              id="image-count"
+              name="image-count"
+              value="1"
+              min="1"
+              max="100"
+            />
+          </label>
+
+          <div id="ui-buttons-wrapper">
+            <button id="load-images" disabled="disabled">Load Images</button>
+            <button id="clear-images">Clear Images</button>
+            <button id="mixed-images">One Of Each</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="content-wrapper">
+        <div id="output"></div>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        <a href="#logo-wrapper">(top)</a>
+        <br /><br />
+        &copy; 2023 <span class="logo">Dog<span>Search</span></span>
+      </p>
+    </footer>
+    <script src="./script/script.js"></script>
+  </body>
+</html>

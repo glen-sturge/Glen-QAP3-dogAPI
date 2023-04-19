@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #444;
+}
+
+.header-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inner-header-wrapper {
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+}
+
+.logo span {
+  font-weight: 900;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#ui {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  align-content: center;
+}
+
+#ui select,
+input {
+  width: 160px;
+  float: right;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  border: #fff solid 2px;
+  border-radius: 16px;
+  padding: 2px;
+}
+
+#ui-buttons-wrapper {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#ui-buttons-wrapper button {
+  background-color: #333;
+  color: #fff;
+  border: #fff solid 2px;
+  border-radius: 16px;
+  padding: 4px 8px;
+}
+
+#ui-buttons-wrapper button:active {
+  background-color: #727171;
+  color: #fff;
+  border: #fff solid 2px;
+  border-radius: 16px;
+  padding: 4px 8px;
+}
+
+#ui-buttons-wrapper button:disabled {
+  background-color: #727171;
+  color: #fff;
+  border: #fff solid 2px;
+  border-radius: 16px;
+  padding: 4px 8px;
+}
+
+main {
+  margin: 20px;
+  flex: 1;
+  /* Note to self, REMEMBER, The flex: 1 property on the main element makes it take up the remaining vertical space, pushing the footer to the bottom of the page. */
+}
+
+.content-wrapper {
+  color: #fff;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.content-wrapper a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#output {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 4px 20px 20px 20px;
+  text-align: center;
+  margin-top: auto;
+}
+
+footer p a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Gallery */
+.gallery-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.image-wrapper {
+  width: 300px;
+  height: 200px;
+  margin-right: 20px;
+  overflow: hidden;
+  border: solid #333 4px;
+  border-radius: 4px;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.info-wrapper {
+  color: #121212;
+  width: 300px;
+}
+
+.info-wrapper h2 {
+  margin-top: 0;
+}
+
+.info-wrapper p {
+  word-wrap: break-word;
+  margin-bottom: 0;
+}
+
+.info-wrapper p a {
+  text-decoration: none;
+  color: #000;
+}
